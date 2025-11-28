@@ -1,61 +1,71 @@
 # Unlock Culture
 
-Website for unlockculture.work - Building intentional organizational cultures through servant leadership and evidence-based transformation.
+Professional landing page for Anbazhagan Ilangovane - VP of Engineering leadership focused on building engineering organizations that deliver exceptional business value.
 
-## Setup Instructions
+🌐 **Live Site:** [unlockculture.work](https://unlockculture.work)
 
-### 1. Create GitHub Repository
-1. Go to https://github.com/new
-2. Name: `unlockculture-site` (or your preferred name)
-3. Keep it public (required for free GitHub Pages)
-4. Don't initialize with README (we already have files)
-5. Click "Create repository"
+## About
 
-### 2. Push Code to GitHub
-```bash
-cd /home/claude/unlockculture-site
-git add .
-git commit -m "Initial commit - Unlock Culture landing page"
-git branch -M main
-git remote add origin https://github.com/YOUR_USERNAME/unlockculture-site.git
-git push -u origin main
-```
+This site showcases leadership philosophy and expertise in:
+- **Strategic Alignment** - Aligning technology investments with business objectives
+- **Evidence-Based Transformation** - Data-driven organizational transformations
+- **High-Performance Cultures** - Building energized teams through coaching psychology
 
-### 3. Enable GitHub Pages
-1. Go to your repository on GitHub
-2. Click "Settings"
-3. Click "Pages" in the left sidebar
-4. Under "Source", select "main" branch
-5. Click "Save"
-6. Wait a few minutes for the site to build
-
-### 4. Configure Custom Domain in Cloudflare
-Add these DNS records in Cloudflare for unlockculture.work:
-
-**A Records** (point to GitHub Pages IPs):
-- Type: A, Name: @, Content: ***************
-- Type: A, Name: @, Content: ***************
-- Type: A, Name: @, Content: ***************
-- Type: A, Name: @, Content: ***************
-
-**CNAME Record** (for www):
-- Type: CNAME, Name: www, Content: YOUR_USERNAME.github.io
-
-### 5. Configure Custom Domain in GitHub
-1. In your repository settings → Pages
-2. Under "Custom domain", enter: unlockculture.work
-3. Check "Enforce HTTPS" (after DNS propagates)
-
-### 6. Wait for DNS Propagation
-- Can take 5 minutes to 24 hours
-- Check status: `dig unlockculture.work`
-
-## Framework
+## The Framework
 
 **Process → Predictable Behavior → Habits → Culture**
 
-Building cultures that ship value through intentional design and servant leadership.
+Creating cultures that ship value through intentional design and servant leadership.
+
+## Technology Stack
+
+- **Platform:** GitHub Pages (Static site hosting)
+- **DNS:** Cloudflare
+- **Domain:** unlockculture.work
+- **Architecture:** Single-page HTML with inline CSS
+- **Deployment:** Automatic via GitHub Pages on push to `main` branch
+
+## Local Development
+
+Preview the site locally using a simple HTTP server:
+
+```bash
+# Python 3
+python3 -m http.server 8000
+
+# Then visit http://localhost:8000
+```
+
+## Deployment
+
+Changes pushed to the `main` branch automatically deploy to GitHub Pages within 1-3 minutes.
+
+```bash
+git add .
+git commit -m "Your commit message"
+git push origin main
+```
+
+Monitor deployment status at: https://github.com/1luvc0d3/unlockculture-site/actions
+
+## Project Structure
+
+```
+.
+├── index.html          # Main landing page
+├── headshot.jpg        # Professional headshot
+├── CNAME              # Custom domain configuration
+├── CLAUDE.md          # Development guidance for Claude Code
+└── README.md          # This file
+```
 
 ## Contact
 
 anbu.ilangovane@unlockculture.work
+
+## Credentials
+
+- AWS Certified Solutions Architect - Professional
+- TOGAF® 9 Certified
+- SAFe 4 Certified Practitioner
+- View all certifications: [credly.com/users/ailan](https://www.credly.com/users/ailan)
